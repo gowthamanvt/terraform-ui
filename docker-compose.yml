@@ -10,7 +10,7 @@ services:
     depends_on:
       - mysql
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/terra
+      - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/terra?useSSL=false
 
   mysql:
     image: mysql/mysql-server:5.7
