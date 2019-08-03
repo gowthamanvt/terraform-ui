@@ -23,3 +23,10 @@ services:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_ALLOW_EMPTY_PASSWORD=no
       - MYSQL_RANDOM_ROOT_PASSWORD=no
+  terraform_libs:
+    image: ranjithka/terraform
+    build: ./terraform_libs
+    volumes: 
+      - ./terraform_libs/terraform:/terraform
+    ports:
+      - "12022:22"
