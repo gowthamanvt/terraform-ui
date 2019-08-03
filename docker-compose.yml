@@ -26,6 +26,8 @@ services:
   terraform_libs:
     image: ranjithka/terraform
     build: ./terraform_libs
+    env_file:
+      - aws.env
     volumes: 
       - ./terraform_libs/terraform:/terraform
     ports:

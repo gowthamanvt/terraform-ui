@@ -8,7 +8,7 @@ directory
 /bin/
 /target
 /javadoc
-
+aws.env
 .gradle
 build/
 
